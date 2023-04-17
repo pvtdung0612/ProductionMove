@@ -13,6 +13,9 @@
 
 <a name="run"></a>
 ## Hướng dẫn chạy
+### Database
+Sử dụng ứng dụng hỗ trợ SQL bất kỳ và import file uet_production_move.sql. Yêu cầu chạy cơ sở dữ liệu trước khi chạy ứng dụng
+
 ### Frontend
 
 1. Vào thư mục Client
@@ -32,9 +35,9 @@ npm start
 
 ### Backend
 
-1. Vào thư mục Client
+1. Vào thư mục Server
 ```
-cd c:\ProductMove\Client
+cd c:\ProductMove\Server
 ```
 
 2. Cài đặt thư viện Node
