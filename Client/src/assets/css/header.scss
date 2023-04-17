@@ -1,0 +1,92 @@
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+}
+.profileButton {
+  position: fixed;
+  right: 20px;
+}
+
+.drop-profile {
+  border-radius: 50%;
+  .info-container {
+    width: 30vw;
+    height: 40vh;
+    min-width: 250px;
+    max-width: 300px;
+    max-height: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    gap: 10%;
+    .avatar {
+      // float: left;
+      display: inline;
+      padding: 0.3rem;
+      background: linear-gradient(130deg, #3e8cda, #e15555);
+      border-radius: 50%;
+      width: 3.75rem;
+      height: 3.75rem;
+      background-size: 200% 200%;
+      @include animation("animated-gradient 2s linear infinite");
+      img {
+        width: 3.75rem;
+        height: 3.75rem;
+        border-radius: 50%;
+      }
+    }
+    .info {
+      font-size: 1rem;
+      font-weight: 300;
+    }
+    .action {
+      width: 100%;
+      padding: 10px auto;
+      span {
+        width: 100%;
+        font-size: 1.3rem;
+        text-align: center;
+      }
+    }
+    .action:hover {
+      background-color: #ffd1dc;
+    }
+  }
+}
+@include keyframes(animated-gradient) {
+  25% {
+    background-position: left bottom;
+  }
+  50% {
+    background-position: right bottom;
+  }
+  75% {
+    background-position: right top;
+  }
+  100% {
+    background-position: left top;
+  }
+}

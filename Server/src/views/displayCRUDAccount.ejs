@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Display CRUD All Account</title>
+        <style>
+            table, th, td {
+              border: 1px solid black;
+              border-collapse: collapse;
+            }
+            </style>
+    </head>
+    <body>
+        <div>Get All Account from DataBase</div>
+        <table style="width:100%">
+            <tr>
+                <th>id</th>
+                <th>username</th>
+                <th>password</th>
+                <th>roleKey</th>
+                <th>workplaceID</th>
+                <th>action</th>
+            </tr>
+            <% for(var i=0; i <dataTable.length; i++) { %>
+                <tr>
+                    <td><%= dataTable[i].id %></td>
+                        <td><%= dataTable[i].username %></td>
+                            <td><%= dataTable[i].password %></td>
+                                <td><%= dataTable[i].roleKey %></td>
+                                    <td><%= dataTable[i].workplaceID %></td>
+                                        <td>
+                                            <a href="/edit-crud-account?id=<%=
+                                                dataTable[i].id %>"
+                                                class="btn-edit"
+                                                type="button">edit</a>
+                                            <a href="/delete-crud-account?id=<%=
+                                                dataTable[i].id %>"
+                                                class="btn-delete"
+                                                type="button">delete</a>
+                                        </td>
+                                    </tr>
+                                    <% } %>
+                                    </table>
+                                </body>
+                            </html>

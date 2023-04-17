@@ -1,0 +1,36 @@
+.leftNavigationBar {
+  background-color: #343a40;
+  height: 100%;
+  > .wrapper {
+    padding-top: 18px;
+    width: 100%;
+    box-sizing: border-box;
+    .item {
+      width: 100%;
+      box-sizing: border-box;
+      margin: 3px 0;
+      padding: 18px;
+      display: flex;
+      color: #eee;
+      white-space: nowrap;
+      text-decoration: none;
+      gap: 10px;
+      cursor: pointer;
+      transition: all 0.2s;
+
+      &.active {
+        background-color: rgb(0, 162, 231);
+        border-right: 4px solid white;
+        transition: all 0.2s;
+        color: black;
+      }
+
+      &:hover {
+        background-color: rgb(0, 162, 231);
+        border-right: 4px solid white;
+        transition: all 0.2s;
+        color: black;
+      }
+    }
+  }
+}

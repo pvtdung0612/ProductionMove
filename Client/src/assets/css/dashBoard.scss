@@ -1,0 +1,27 @@
+.dashboard {
+  .css-hyum1k-MuiToolbar-root {
+    min-height: 64px;
+  }
+  .body {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 64px;
+    display: flex;
+    width: 100%;
+    height: calc(100% - 64px);
+    transition: all 0.3s;
+    .content {
+      box-sizing: content-box;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: all 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: bisque;
+      box-sizing: border-box;
+    }
+  }
+}

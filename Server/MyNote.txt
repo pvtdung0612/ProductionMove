@@ -1,0 +1,69 @@
+Command:
+npx sequelize-cli db:migrate
+npx sequelize-cli db:seed:all
+npm start
+
+TASKBAR
+cssx
+    Quản lý sx:
+    Thống kê lỗi:
+
+Worked:
+DellCorp
+21/12
+create account, R
+change database products -> products + productlines R
+get all product line: có thêm biến total tổng tất cả sản phẩm có product line giống nhau
+create productline have valid exsit and empty
+update productline -> update all product have this productLine : talk quang to add alert fe
+
+22/12
+change database sell, error_reports, add agentID and insurancecenterID to products
+create get all product
+convert workplaceID to workplaceName get all account
+
+Cơ sở sản xuất
+22/12
+
+Need:
+Session:
+    xử lý logout fe và fe khi tắt trình duyệt -> đồng bộ với be
+Agent:
+    quản lý khách hàng
+Factory:
+    thống kê tỉ lệ sản phẩm lỗi
+
+Develop:
+DellCorp
+    theo doi sp theo cssx,... tạo combobox chọn
+    chỉnh sửa thời gian
+    
+
+Worked:
+    Login:
+        Valid:
+            -check username-password exist, empty
+        Need:
+            -FE need valid like BE
+            -valid need valid space
+    dellCorp:
+        Account-management: successed
+            Get-all-account:
+            Create accout:
+                Valid:
+                    -check username and password is empty or has space, check username exist
+                    -check roleKey R1-4, check workplaceID nơi làm việc có tồn tại để làm việc hay không
+            Delete account:
+            Need:
+                edit account:
+        Product-management:
+            Get-all-product:
+                sort
+            Create:
+                -valid productline exist
+            delete:
+            edit
+
+PROJECT SAVE:
+Session:
+    account except password

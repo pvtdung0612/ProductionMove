@@ -1,0 +1,70 @@
+.product {
+  background-color: rgb(255, 255, 255);
+  width: 95%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1%;
+  .btn-group {
+    display: flex;
+    position: relative;
+    .btn {
+      height: 40px;
+      margin: 5px;
+    }
+    .date-picker {
+      display: flex;
+      flex-direction: row;
+      position: absolute;
+      right: 5px;
+
+      .MuiTextField-root {
+        box-sizing: border-box;
+        width: 110px;
+        height: 50px;
+        margin: 5px;
+        .MuiFormLabel-root {
+          transform: translate(14px, 6px) scale(1);
+        }
+        .MuiInputLabel-shrink {
+          transform: translate(16px, -9px) scale(0.75);
+        }
+        .MuiInputBase-root {
+          padding: 5px;
+          input {
+            padding: 0;
+            padding-left: 5px;
+            padding-right: 0;
+          }
+        }
+      }
+    }
+    @media (max-width: 790px) {
+      .date-picker {
+        display: none;
+      }
+    }
+  }
+  .actionsBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 150px;
+    > * {
+      cursor: pointer;
+    }
+  }
+  .MuiDataGrid-root {
+    .MuiDataGrid-row:hover {
+      background-color: #b2ffff;
+    }
+    .MuiDataGrid-cell--textLeft {
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .MuiDataGrid-columnHeaderTitleContainer {
+    align-items: center;
+    justify-content: center;
+  }
+}
