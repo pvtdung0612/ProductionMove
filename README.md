@@ -1,5 +1,4 @@
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/pvtdung0612/ProductionMove.git
-git push -u origin main
+---
+Tên Project: ProductionMode
+Công nghệ sử dụng: ReactJs@18.2.0 ExpressJs@4.18.2 NodeJs@18.12.1 MySQL
+---
